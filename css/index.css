@@ -73,28 +73,23 @@
     list-style: none;
     padding-left: 1rem;
     margin-bottom: 2.5rem;
+    
   }
   .sidebar ul li a{
     font-size: 1.6rem;
     text-decoration: none;
     color: var(--color-white);
+    
+    
+    display: grid;
+    align-items: center;
+    grid-template-columns: 4rem max-content;
   }
   .sidebar ul li a:hover{
     text-decoration: underline;
   }
   .sidebar ul li a i{
     font-size: 1.7rem;
-    padding-right: 1.5rem;
+    padding-right: 2rem;
   }
-  .sidebar ul li:first-child a i{
-    padding-right: 2.1rem;
-  }
-  .sidebar ul li:nth-child(3) a i{
-    padding-right: 1.6rem;
-  }
-  .sidebar ul li:nth-child(4) a i{
-    padding-right: 2.05rem;
-  }
-  .sidebar ul li:nth-child(5) a i{
-    padding-right: 1.6rem;
-  }
+  

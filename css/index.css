@@ -62,10 +62,11 @@
   }
   .sidebar .dashboard a{
     color: var(--color-primary);
+    font-weight: 600;
   }
   .sidebar .dashboard i{
     font-size: 1.8rem;
-    padding-right: .7rem;
+    padding-right: 1.5rem;
     color: var(--color-primary);
   }
   .sidebar ul li{

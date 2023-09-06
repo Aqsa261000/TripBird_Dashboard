@@ -33,7 +33,7 @@
   }
   .sidebar{
     background: var(--color-primary);
-    padding: 1rem 0rem;
+    
     padding-left: 3rem;
   }
   .sidebar .logo{
@@ -41,7 +41,6 @@
     grid-template-columns: repeat(2,min-content);
     align-items: center;
     justify-items: center;
-    
     margin:2rem 0 7rem 0;
     color: var(--color-white);
   }
@@ -53,7 +52,6 @@
     font-size: 2.7rem;
   }
   .sidebar .dashboard{
-    
     background-color: var(--color-white);
     border-top-left-radius: 2rem;
     border-bottom-left-radius: 2rem;
@@ -68,28 +66,26 @@
   .sidebar .dashboard i{
     font-size: 1.8rem;
     padding-right: .7rem;
+    color: var(--color-primary);
   }
   .sidebar ul li{
-    list-style: none;
     padding-left: 1rem;
     margin-bottom: 2.5rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 5rem max-content;
     
   }
   .sidebar ul li a{
     font-size: 1.6rem;
-    text-decoration: none;
     color: var(--color-white);
-    
-    
-    display: grid;
-    align-items: center;
-    grid-template-columns: 4rem max-content;
   }
   .sidebar ul li a:hover{
     text-decoration: underline;
   }
-  .sidebar ul li a i{
+  .sidebar ul li i{
     font-size: 1.7rem;
-    padding-right: 2rem;
+    
+    color: var(--color-white);
   }
   

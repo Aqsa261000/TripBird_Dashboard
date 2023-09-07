@@ -232,3 +232,53 @@ background-color: var(--color-greendark);
 .table tbody tr td .buttons .disable:hover{
   background-color: var(--color-darkgrey);
 }
+.products .images{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-content: center;
+  justify-items: center;
+}
+.products .images .luggageimage{
+  width: 4rem;
+  height: 8rem;
+}
+.products .images .jacketimage {
+  width: 5rem;
+  height: 8rem;
+}
+.products .images .jacketimage:nth-child(2){
+  width: 7rem;
+  height: 8rem;
+}
+form{
+  padding: 2rem  5rem ;
+}
+.modal-content h2{
+  text-align: center;
+  padding: 7rem 0 0 0;
+  font-weight: 700;
+}
+.modal-content form .button{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  
+}
+.modal-content form button{
+  background-color: var(--color-white);
+  border: none;
+  padding: 1rem 2rem;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+.modal-content form label,.modal-content form input{
+  font-size: 1.4rem;
+  height: 4.2rem;
+  
+}
+.modal-content form label{
+  font-weight: 600;
+}

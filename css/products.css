@@ -18,7 +18,7 @@ body {
 }
 
 :root {
-  --color-lightblack:rgb(55, 55, 55);
+  --color-lightblack: rgb(55, 55, 55);
   --color-black: rgb(0, 0, 0);
   --color-white: rgb(255, 255, 255);
   --color-primary: rgb(0, 140, 255);
@@ -26,29 +26,29 @@ body {
   --color-primary-dark: rgb(0, 102, 185);
   --color-red: rgb(255, 0, 0);
   --color-darkred: rgb(229, 0, 0);
-  --color-grey:rgb(128, 128, 128);
-  --color-darkgrey:rgb(103, 103, 103);
-  --color-green:rgb(0, 128, 0);
-  --color-greendark:rgb(1, 102, 1);
+  --color-grey: rgb(128, 128, 128);
+  --color-darkgrey: rgb(103, 103, 103);
+  --color-green: rgb(0, 128, 0);
+  --color-greendark: rgb(1, 102, 1);
 }
 
 a {
   text-decoration: none;
 }
-button{
+button {
   border-radius: 1rem;
 }
-button:focus{
+button:focus {
   border: none;
   outline: none;
 }
 li {
   list-style: none;
 }
-.table th{
+.table th {
   text-align: center;
 }
-.table td{
+.table td {
   text-align: center;
 }
 
@@ -63,14 +63,12 @@ li {
   display: grid;
   grid-template-columns: 30rem 1fr;
   grid-template-rows: 100%;
-  
 }
 
 .sidebar {
   background: var(--color-primary);
 
   padding-left: 3rem;
-  
 }
 
 .sidebar .logo {
@@ -95,7 +93,7 @@ li {
   background-color: var(--color-white);
   border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   font-size: 2rem;
   font-weight: 500;
   margin-bottom: 2.5rem;
@@ -118,7 +116,6 @@ li {
   display: grid;
   align-items: center;
   grid-template-columns: 5rem max-content;
-
 }
 
 .sidebar ul li a {
@@ -140,33 +137,30 @@ li {
     border: none;
     outline: none;
   } */
-.products{
-  
+.products {
   margin: 2rem 7rem;
 }
-.products .add{
+.products .add {
   text-align: right;
   background-color: var(--color-white);
   padding: 1rem 2rem;
   border: none;
-  
-  
 }
-.products .add button{
+.products .add button {
   background-color: var(--color-black);
   color: var(--color-white);
   font-weight: 600;
   font-size: 1.4rem;
 }
-.products .add button:hover{
+.products .add button:hover {
   background-color: var(--color-darkgrey);
 }
-.products h1{
+.products h1 {
   text-align: center;
   padding: 0 0 2rem 0;
   font-weight: 700;
 }
-  .table .thead tr th {
+.table .thead tr th {
   font-size: 1.4rem;
   width: 2rem;
   padding: 1.5rem 0;
@@ -174,7 +168,6 @@ li {
 
 .table tbody tr td {
   font-size: 1.4rem;
-
 }
 
 .table tbody tr td .buttons {
@@ -189,9 +182,9 @@ li {
   padding: 0.5rem 0;
   font-weight: 600;
 }
-.table tbody tr td .buttons .approve:hover{
-background-color: var(--color-greendark);
-} 
+.table tbody tr td .buttons .approve:hover {
+  background-color: var(--color-greendark);
+}
 .table tbody tr td .buttons .reject {
   border: none;
   background-color: var(--color-red);
@@ -199,7 +192,7 @@ background-color: var(--color-greendark);
   padding: 0.5rem 0;
   font-weight: 600;
 }
-.table tbody tr td .buttons .reject:hover{
+.table tbody tr td .buttons .reject:hover {
   background-color: var(--color-darkred);
 }
 .table tbody tr td .buttons .edit {
@@ -209,17 +202,17 @@ background-color: var(--color-greendark);
   padding: 0.5rem 0;
   font-weight: 600;
 }
-.table tbody tr td .buttons .edit:hover{
+.table tbody tr td .buttons .edit:hover {
   background-color: var(--color-primary-dark);
 }
 .table tbody tr td .buttons .delete {
   border: none;
-  background-color: red;
+  background-color: var(--color-red);
   color: var(--color-white);
   padding: 0.5rem 0;
   font-weight: 600;
 }
-.table tbody tr td .buttons .delete:hover{
+.table tbody tr td .buttons .delete:hover {
   background-color: var(--color-darkred);
 }
 .table tbody tr td .buttons .disable {
@@ -229,16 +222,17 @@ background-color: var(--color-greendark);
   padding: 0.5rem 0;
   font-weight: 600;
 }
-.table tbody tr td .buttons .disable:hover{
+.table tbody tr td .buttons .disable:hover {
   background-color: var(--color-darkgrey);
 }
-.products .images{
+.products .images {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-content: center;
   justify-items: center;
+  padding: 2rem 0;
 }
-.products .images .luggageimage{
+.products .images .luggageimage {
   width: 4rem;
   height: 8rem;
 }
@@ -246,25 +240,24 @@ background-color: var(--color-greendark);
   width: 5rem;
   height: 8rem;
 }
-.products .images .jacketimage:nth-child(2){
+.products .images .jacketimage:nth-child(2) {
   width: 7rem;
   height: 8rem;
 }
-form{
-  padding: 2rem  5rem ;
+form {
+  padding: 2rem 5rem;
 }
-.modal-content h2{
+.modal-content h2 {
   text-align: center;
-  padding: 7rem 0 0 0;
+  padding: 5rem 0 0 0;
   font-weight: 700;
 }
-.modal-content form .button{
+.modal-content form .button {
   display: grid;
   align-items: center;
   justify-items: center;
-  
 }
-.modal-content form button{
+.modal-content form button {
   background-color: var(--color-white);
   border: none;
   padding: 1rem 2rem;
@@ -274,11 +267,11 @@ form{
   font-weight: 600;
   margin-top: 1rem;
 }
-.modal-content form label,.modal-content form input{
+.modal-content form label,
+.modal-content form input {
   font-size: 1.4rem;
   height: 4.2rem;
-  
 }
-.modal-content form label{
+.modal-content form label {
   font-weight: 600;
 }

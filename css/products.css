@@ -257,6 +257,7 @@ form {
   align-items: center;
   justify-items: center;
 }
+
 .modal-content form button {
   background-color: var(--color-white);
   border: none;
@@ -266,6 +267,9 @@ form {
   font-size: 1.4rem;
   font-weight: 600;
   margin-top: 1rem;
+}
+.modal-content form button:hover {
+  background-color: var(--color-primary-dark);
 }
 .modal-content form label,
 .modal-content form input {

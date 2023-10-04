@@ -94,6 +94,7 @@ li {
 .sidebar .dashboard a {
   color: var(--color-primary);
   font-weight: 600;
+  width:max-content ;
 }
 
 .sidebar .dashboard i {

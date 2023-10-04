@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+  overflow-x: hidden;
+}
+
+body {
+  max-width: 100%;
+  font-family: 'Poppins', sans-serif;
+  height: auto;
+}
+
+:root {
+  --color-lightblack: rgb(55, 55, 55);
+  --color-black: rgb(0, 0, 0);
+  --color-white: rgb(255, 255, 255);
+  --color-primary: rgb(0, 140, 255);
+  --color-primary-dark: rgb(3, 115, 207);
+  --color-primary-dark: rgb(0, 102, 185);
+  --color-red: rgb(255, 0, 0);
+  --color-darkred: rgb(229, 0, 0);
+  --color-grey: rgb(128, 128, 128);
+  --color-darkgrey: rgb(103, 103, 103);
+  --color-green: rgb(0, 128, 0);
+  --color-greendark: rgb(1, 102, 1);
+}
+
+a {
+  text-decoration: none;
+}
+button {
+  border-radius: 1rem;
+}
+button:focus {
+  border: none;
+  outline: none;
+}
+li {
+  list-style: none;
+}
+.table th {
+  text-align: center;
+}
+.table td {
+  text-align: center;
+}
+.fullcontainer {
+  display: grid;
+  grid-template-columns: 30rem 1fr;
+  /* grid-template-rows: 100%; */
+}
+
+.sidebar {
+  background: var(--color-primary);
+  padding-left: 3rem;
+  height: 123.5%;
+}
+
+.sidebar .logo {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  align-items: center;
+  justify-items: center;
+  margin: 2rem 0 7rem 0;
+  color: var(--color-white);
+}
+
+.sidebar .logo img {
+  width: 7rem;
+  height: 6rem;
+}
+
+.sidebar .logo h1 {
+  font-size: 2.7rem;
+}
+
+.sidebar .dashboard {
+  background-color: var(--color-white);
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+
+.sidebar .dashboard a {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.sidebar .dashboard i {
+  font-size: 1.8rem;
+  padding-right: 1.5rem;
+  color: var(--color-primary);
+}
+
+.sidebar ul li {
+  padding-left: 1rem;
+  margin-bottom: 2.5rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 5rem max-content;
+}
+
+.sidebar ul li a {
+  font-size: 1.6rem;
+  color: var(--color-white);
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
+
+.sidebar ul li i {
+  font-size: 1.7rem;
+
+  color: var(--color-white);
+}
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  margin-top: 2.5rem;
+  height: 50px;
+}
+.dashboard .dashboard-heading {
+  font-size: 3rem;
+  font-weight: 600;
+}
+form {
+  background-color: grey;
+  border-radius: 25px;
+  position: relative;
+}
+input {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 1.2rem;
+  font-size: 1.5rem;
+  padding: 0.4rem 1.5rem;
+  padding-right: 4rem;
+  border: none;
+  box-shadow: 0 0 2px 2px grey;
+}
+input:focus {
+  outline: none;
+}
+.search-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 100%;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 1.8rem;
+}
+.search-btn i {
+  color: rgb(93, 94, 95);
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 50px;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+}
+.icons a {
+  color: var(--color-primary);
+  font-size: 3rem;
+  padding: 2rem;
+}
+.start-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  grid-template-rows: 100px;
+  margin-top: 4rem;
+  margin-left: 7rem;
+  gap: 2.5rem;
+}
+.start-cards .boxes {
+  border-radius: 0.7rem;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  position: relative;
+  text-align: center;
+}
+.start-cards .boxes:hover {
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+.boxes h1 {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  padding-top: 1rem;
+}
+.boxes h3 {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+.table {
+  margin-top: 2rem;
+}
+.table thead tr .first-row {
+  font-size: 1.5rem;
+}
+.table tbody tr th img {
+  width: 50px;
+  height: 50px;
+}
+.table tbody tr td {
+  font-size: 1.5rem;
+}
+.btn-group {
+  gap: 1rem;
+}
+
+.top-hotels,
+.booking-history {
+  margin-top: 2.5rem;
+  color: var(--color-grey);
+  font-size: 2rem;
+  font-weight: normal;
+}
+.cards {
+  display: flex;
+  width: 100%; /* Adjust the width as needed */
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin: 2rem 5rem;
+  border-radius: 3px;
+  height: 30vh;
+}
+.card-body .card-text {
+  font-size: 1.2rem;
+  color: var(--color-grey);
+}
+.card:hover {
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+}
